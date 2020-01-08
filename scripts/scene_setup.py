@@ -14,8 +14,8 @@ def simulate(scene, mesh_objects, spawn_range, p_visible):
         object.location.x = random.randrange(spawn_range[0][0], spawn_range[0][1])
         object.location.y = random.randrange(spawn_range[1][0], spawn_range[1][1])
         object.location.z = random.randrange(spawn_range[2][0], spawn_range[2][1])
-
-    scene.frame_set(100)
+    for i in range(50):
+        scene.frame_set(i)
 
 
 
